@@ -1,5 +1,10 @@
-import { HomeContent } from '@/app/page';
+import { HomeContent } from '@/components/pages/HomeContent';
 import { getDictionary } from '@/lib/dictionaries';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Home',
+};
 
 export const generateStaticParams = () => {
   return [{ lang: 'ta' }, { lang: 'sa' }];

@@ -1,5 +1,10 @@
-import { ProjectsContent } from '@/app/projects/page';
+import { ProjectsContent } from '@/components/pages/ProjectsContent';
 import { getDictionary } from '@/lib/dictionaries';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Projects & Activities',
+};
 
 export const generateStaticParams = () => {
   return [{ lang: 'ta' }, { lang: 'sa' }];

@@ -15,8 +15,25 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Shastra Vidya Sthanam",
-  description: "Preserving Ancient Knowledge",
+  title: {
+    template: "%s | Shastra Vidya Sthanam",
+    default: "Shastra Vidya Sthanam - Preserving Ancient Knowledge",
+  },
+  description: "A traditional institution preserving spiritual knowledge, offering courses in Sanskrit, Advaita Vedanta, and ancient texts.",
+  keywords: ["Sanskrit", "Advaita Vedanta", "Traditional Knowledge", "Shastra Vidya", "Vedic Heritage", "India"],
+  openGraph: {
+    title: "Shastra Vidya Sthanam",
+    description: "Preserving and disseminating ancient spiritual and traditional knowledge for future generations.",
+    url: "https://shastravidya.org",
+    siteName: "Shastra Vidya Sthanam",
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Shastra Vidya Sthanam",
+    description: "Preserving and disseminating ancient spiritual knowledge.",
+  },
 };
 
 export default function RootLayout({
