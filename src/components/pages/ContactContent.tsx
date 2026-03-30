@@ -6,8 +6,6 @@ import { motion } from 'framer-motion';
 
 export function ContactContent({ dictionary }: { dictionary: ReturnType<typeof getDictionary> }) {
   const { address, trust, phone } = dictionary.contact;
-  // Fallback for UI elements mapped
-  const ui = navTranslations['en'];
   
   const [formData, setFormData] = useState({ name: '', email: '', message: '' });
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -106,7 +104,6 @@ export function ContactContent({ dictionary }: { dictionary: ReturnType<typeof g
                 type="submit" 
                 disabled={isSubmitting || !formData.name || !formData.email || !formData.message}
                 className="inline-flex w-full items-center justify-center rounded-xl bg-orange-600 px-8 py-4 text-base font-bold text-white shadow-lg shadow-orange-600/20 transition-all hover:bg-orange-700 hover:-translate-y-0.5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-orange-500 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50"
-                aria-busy={isSubmitting}
               >
                 {isSubmitting ? "Sending..." : "Send Message"}
               </button>

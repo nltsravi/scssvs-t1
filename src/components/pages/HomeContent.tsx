@@ -13,32 +13,35 @@ export function HomeContent({ dictionary }: { dictionary: ReturnType<typeof getD
   return (
     <div className="flex flex-col min-h-screen">
       {/* Hero Section */}
-      <section className="relative py-24 md:py-40 bg-orange-50 dark:bg-gray-900 border-b overflow-hidden">
-        {/* Decorative subtle background blob */}
-        <div className="absolute top-0 right-0 -translate-y-12 translate-x-1/3 w-96 h-96 bg-orange-200/50 dark:bg-orange-800/10 rounded-full blur-3xl opacity-50 pointer-events-none" />
-        <div className="absolute bottom-0 left-0 translate-y-1/3 -translate-x-1/3 w-96 h-96 bg-red-200/50 dark:bg-red-900/10 rounded-full blur-3xl opacity-50 pointer-events-none" />
-
-        <div className="container mx-auto px-4 md:px-6 relative z-10 max-w-6xl">
+      <section className="relative py-24 md:py-48 min-h-[85vh] flex items-center justify-center border-b overflow-hidden">
+        {/* Background Image & Overlay */}
+        <div 
+          className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat"
+          style={{ backgroundImage: `url('${process.env.NODE_ENV === "production" ? "/scssvs-t1" : ""}/svs-hero.png')` }}
+        />
+        <div className="absolute inset-0 z-0 bg-gradient-to-t from-gray-950/90 via-gray-950/70 to-gray-900/60 mix-blend-multiply" />
+        
+        <div className="container mx-auto px-4 md:px-6 relative z-10 max-w-5xl">
           <motion.div 
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
-            className="flex flex-col items-center text-center max-w-3xl mx-auto space-y-8"
+            className="flex flex-col items-center text-center space-y-8"
           >
             <motion.div 
               initial={{ opacity: 0, scale: 0.9 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ delay: 0.2, duration: 0.5 }}
-              className="inline-flex items-center rounded-full border border-orange-200 bg-white/80 dark:bg-orange-900/30 dark:border-orange-800 dark:text-orange-200 px-4 py-1.5 text-sm font-medium text-orange-800 shadow-sm backdrop-blur-sm"
+              className="inline-flex items-center rounded-full border border-orange-500/30 bg-black/40 px-4 py-1.5 text-sm font-medium text-orange-200 shadow-sm backdrop-blur-md"
             >
               {home.subtitle}
             </motion.div>
             
-            <h1 className="text-4xl md:text-6xl font-extrabold tracking-tight text-gray-900 dark:text-white leading-[1.1]">
+            <h1 className="text-4xl md:text-5xl lg:text-7xl font-extrabold tracking-tight text-white leading-[1.1] drop-shadow-xl shadow-black">
               {home.title}
             </h1>
             
-            <p className="text-lg md:text-xl text-gray-600 dark:text-gray-300 max-w-2xl leading-relaxed">
+            <p className="text-lg md:text-xl text-gray-200 max-w-2xl leading-relaxed font-medium drop-shadow-md shadow-black">
               {home.heroDescription}
             </p>
             
@@ -46,13 +49,13 @@ export function HomeContent({ dictionary }: { dictionary: ReturnType<typeof getD
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.4, duration: 0.5 }}
-              className="flex flex-col sm:flex-row gap-4 pt-4"
+              className="flex flex-col sm:flex-row gap-4 pt-4 w-full sm:w-auto"
             >
-              <Link href="/projects" className="inline-flex items-center justify-center rounded-lg bg-orange-600 px-8 py-3.5 text-base font-semibold text-white shadow-md hover:shadow-lg transition-all hover:-translate-y-0.5 hover:bg-orange-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-orange-500">
+              <Link href="/projects" className="inline-flex w-full sm:w-auto items-center justify-center rounded-lg bg-orange-600 px-8 py-4 text-base font-bold text-white shadow-xl shadow-orange-900/40 transition-all hover:-translate-y-0.5 hover:bg-orange-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-orange-400">
                 {home.cta}
-                <ArrowRight className="ml-2 h-4 w-4" />
+                <ArrowRight className="ml-2 h-5 w-5" />
               </Link>
-              <Link href="/about" className="inline-flex items-center justify-center rounded-lg border-2 border-orange-200 bg-white dark:bg-gray-900 dark:border-gray-700 hover:bg-orange-50 dark:hover:bg-gray-800 px-8 py-3.5 text-base font-semibold text-gray-800 dark:text-gray-200 shadow-sm transition-all hover:-translate-y-0.5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-orange-500">
+              <Link href="/about" className="inline-flex w-full sm:w-auto items-center justify-center rounded-lg border border-white/30 bg-black/30 backdrop-blur-md px-8 py-4 text-base font-bold text-white shadow-xl transition-all hover:-translate-y-0.5 hover:bg-white/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white">
                 Learn More
               </Link>
             </motion.div>
