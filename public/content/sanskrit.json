@@ -1,0 +1,74 @@
+{
+  "home": {
+    "title": "श्रीचन्द्रशेखरेन्द्रसरस्वतीशास्त्रविद्यास्थानम्",
+    "subtitle": "Shri Chandrashekharendra Saraswati Shaastra Vidya Sthaanam",
+    "heroDescription": "An institution of excellence organized and supported by the Prof. S Soundararajan Public Charitable Trust.",
+    "cta": "अस्माकं कार्यक्रमान् पश्यन्तु"
+  },
+  "about": {
+    "title": "अस्माकं विषये",
+    "mission": "अस्मवद्वद्यास्थानस्य इदमेि प्रधानम् प्रथमं च उद्देश्यं यत् िेदेषु तदाभश्रतशास्त्रेषु च श्रद्धाितां छात्राणां अस्मवद्वद्यास्थानद्वारा सांप्रदावयकरीत्या शास्त्रबोधनमेि।",
+    "vision": "महामहोपाध्याय ब्रह्मश्री Dr. मभणद्राविडाचायायणां आध्यक्षप्रावप् संस्थायाः िाग्यं मन्यामहे। संस्थेयं श्रीचरणानां उपदेशानुसारं न्यायिेदान्तपूियमीमांसाशास्त्रैः कररष्यमाणारम्भा कालान्तरे व्याकरणिेदिाष्यावदशास्त्ररत्नैश्च जाज्वल्यमाना िविता।",
+    "history": "आरम्भकाले एि श्रीचरणाः महोदयानां वनकिे साम्प्रदावयकरीत्या शास्त्राणाम् अभ्यासं कारवयतुं विद्याक े न्द्रस्य आरम्भविषये श्री सौन्दरराज महोदयम् उपवददेश। सौन्दरराजन् महोदयाः तस्य च धमयपत्नी श्रीमती चम्पकिल्ली महोदया इवत द्वािप्येतौ श्रीचरणानां अभिप्रायमनुसृत्यैि जीिनं यापयन्तािास्ताम्। अत एि च संस्थेयं तयोरभिलाषसंपूतयये शास्त्रविद्यायाः संरक्षणौपवयक विद्यास्थानोत्पादनाय बद्धपररकरा िरीिवतय।",
+    "founder": "इयञ्च संस्था आचायय सौन्दरराजन् महोदयस्य उत्साहेन तस्यैि स्मारकरूपेण संस्थावपता। महोदयश्च सः रसायवनक विद्यायां पारङ्गतः तत्पाठने क ृ तश्रमः बेङ्गलूरू प्रदेशीय Indian Institute of Science इत्यत्र आचाययपदम् अलङ्कुिायणः च आसीत्। महोदयः एिं तस्य धमयपत्नी इवत द्वािवप काञ्ची कामकोवि पीठाधीश्वराणां श्री श्री चन्द्रशेखरेन्द्रसरस्वती यवतियायणां उपदेशामृतमनुवतष्ठन्तौ जीिनम् अयापयताम्।"
+  },
+  "projects": [
+    {
+      "title": "National Seminar",
+      "description": "व्याप्तिसतिकसारः (Vyaptisatakasara), led by Brahmashri Mani Dravid and Brahmashri Devanathacharya. (01/06/2024)"
+    },
+    {
+      "title": "Vakyartha Sabha",
+      "description": "छात्रािाां कृिे शास्त्त्रिाक्याथयसभा (Shastra Vakyartha Sabha for students), led by Brahmashri Naveen Sharma. (18/08/2024)"
+    },
+    {
+      "title": "Workshop on Nyayabodhini",
+      "description": "न्यायबोधिन्याम् अनुमानखण्डः (Anumana Khanda in Nyayabodhini), led by Brahmashri Naveen Sharma and Brahmashri Narasimhacharya. (28/09/2024 - 29/09/2024)"
+    },
+    {
+      "title": "Workshop on Shabda Khanda",
+      "description": "न्यायबोधिन्याम् शब्दखण्डः (Shabda Khanda in Nyayabodhini), led by Brahmashri Vasudevan. (14/12/2024 - 15/12/2024)"
+    },
+    {
+      "title": "Vedanta Workshop",
+      "description": "िेदान्िे ससद्िान्िलेशसङ्ग्रहः (Siddhantaleshasangraha in Vedanta), led by Brahmashri Maheshwaracharya. (22/02/2025)"
+    },
+    {
+      "title": "150th Vakyartha Sabha (Vedanta)",
+      "description": "िेदान्िमीमाांसािाक्याथयसभा (Vedanta Mimamsa Vakyartha Sabha), led by Brahmashri Maheshwaracharya. (26/04/2025)"
+    },
+    {
+      "title": "150th Vakyartha Sabha (Vyakarana)",
+      "description": "व्याकरिन्याय िाक्याथयसभा (Vyakarana Nyaya Vakyartha Sabha), led by Brahmashri Vidyadhisha. (27/04/2025)"
+    },
+    {
+      "title": "Vyadhikarana Workshop",
+      "description": "व्यधिकरिे प्रथमस्त्िलक्षिम् (Prathamasvalakshanam in Vyadhikarana), led by Brahmashri Naveen Sharma. (12/07/2025)"
+    },
+    {
+      "title": "Professor Soundarrajan Memorial Sabha",
+      "description": "न्यायकुसुमाञ्जलयाां िाक्याथय सभा (Nyayakusumanjali Vakyartha Sabha), led by Brahmashri Devanathacharya. (13/09/2025)"
+    },
+    {
+      "title": "Special Vakyartha Sabha",
+      "description": "िेदान्िमीमाांसयोः विशेषिाक्याथय सभा (Special Vakyartha Sabha on Vedanta and Mimamsa), led by Brahmashri Devanathacharya. (08/11/2025 - 09/11/2025)"
+    },
+    {
+      "title": "Nyaya Vakyartha Sabha",
+      "description": "न्यायिाक्याथय सभा (Nyaya Vakyartha Sabha), led by Brahmashri Devanathacharya. (23/11/2025)"
+    },
+    {
+      "title": "Special Vakyartha Sabha 2",
+      "description": "विशेषिाक्याथय सभा (Special Vakyartha Sabha), led by Brahmashri Devanathacharya. (28/12/2025)"
+    },
+    {
+      "title": "Workshop on Pratyaksha Khanda",
+      "description": "न्यायबोधिन्याम् प्रत्यक्षखण्डः (Pratyaksha Khanda in Nyayabodhini), led by Brahmashri Sudarshanacharya and Brahmashri Shivatreya Joshi. (31/01/2026)"
+    }
+  ],
+  "contact": {
+    "address": "152, Maxworth Nagar, Kovilambakkam, Chennai – 600 029",
+    "trust": "50, 1st Avenue, Shastri Nagar, Chennai – 600 020",
+    "phone": "94447 02097, 98400 45776"
+  }
+}
