@@ -13,7 +13,7 @@ export function HomeContent({ dictionary }: { dictionary: ReturnType<typeof getD
   return (
     <div className="flex flex-col min-h-screen">
       {/* Hero Section */}
-      <section className="relative py-24 md:py-48 min-h-[85vh] flex items-center justify-center border-b overflow-hidden">
+      <section className="relative pb-12 pt-24 md:pb-24 md:pt-48 min-h-[85vh] flex items-end justify-start border-b overflow-hidden">
         {/* Background Image & Overlay */}
         <div 
           className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat"
@@ -21,35 +21,18 @@ export function HomeContent({ dictionary }: { dictionary: ReturnType<typeof getD
         />
         <div className="absolute inset-0 z-0 bg-gradient-to-t from-gray-950/90 via-gray-950/70 to-gray-900/60 mix-blend-multiply" />
         
-        <div className="container mx-auto px-4 md:px-6 relative z-10 max-w-5xl">
+        <div className="container mx-auto px-4 md:px-6 relative z-10 max-w-5xl w-full">
           <motion.div 
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
-            className="flex flex-col items-center text-center space-y-8"
+            className="flex flex-col items-start text-left"
           >
-            <motion.div 
-              initial={{ opacity: 0, scale: 0.9 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ delay: 0.2, duration: 0.5 }}
-              className="inline-flex items-center rounded-full border border-orange-500/30 bg-black/40 px-4 py-1.5 text-sm font-medium text-orange-200 shadow-sm backdrop-blur-md"
-            >
-              {home.subtitle}
-            </motion.div>
-            
-            <h1 className="text-4xl md:text-5xl lg:text-7xl font-extrabold tracking-tight text-white leading-[1.1] drop-shadow-xl shadow-black">
-              {home.title}
-            </h1>
-            
-            <p className="text-lg md:text-xl text-gray-200 max-w-2xl leading-relaxed font-medium drop-shadow-md shadow-black">
-              {home.heroDescription}
-            </p>
-            
             <motion.div 
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.4, duration: 0.5 }}
-              className="flex flex-col sm:flex-row gap-4 pt-4 w-full sm:w-auto"
+              transition={{ delay: 0.2, duration: 0.5 }}
+              className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto"
             >
               <Link href="/projects" className="inline-flex w-full sm:w-auto items-center justify-center rounded-lg bg-orange-600 px-8 py-4 text-base font-bold text-white shadow-xl shadow-orange-900/40 transition-all hover:-translate-y-0.5 hover:bg-orange-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-orange-400">
                 {home.cta}

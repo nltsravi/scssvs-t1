@@ -39,7 +39,7 @@ export default function Header() {
     <header className="sticky top-0 z-50 w-full border-b backdrop-blur-md bg-white/90 dark:bg-gray-950/90 px-4 md:px-6 shadow-sm transition-all">
       <div className="flex h-16 md:h-20 items-center justify-between mx-auto max-w-7xl relative">
         <Link href={`${prefix}/`} className="flex items-center gap-2 z-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-orange-500 rounded-sm">
-          <Image src="/logo.jpg" alt="Shastra Vidya Sthanam Logo" width={50} height={50} className="w-10 h-10 md:w-14 md:h-14 rounded-full object-cover border border-orange-200" priority />
+          <Image src={`${process.env.NODE_ENV === "production" ? "/scssvs-t1" : ""}/logo.jpg`} alt="Shastra Vidya Sthanam Logo" width={50} height={50} className="w-10 h-10 md:w-14 md:h-14 rounded-full object-cover border border-orange-200" priority />
           <span className="font-extrabold text-lg md:text-xl text-orange-800 tracking-tight hidden sm:block">Shastra Vidya Sthanam</span>
         </Link>
         
