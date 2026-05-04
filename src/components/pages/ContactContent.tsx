@@ -5,7 +5,7 @@ import { getDictionary, navTranslations } from '@/lib/dictionaries';
 import { motion } from 'framer-motion';
 
 export function ContactContent({ dictionary }: { dictionary: ReturnType<typeof getDictionary> }) {
-  const { address, trust, phone } = dictionary.contact;
+  const { address, trust } = dictionary.contact;
   
   const [formData, setFormData] = useState({ name: '', email: '', message: '' });
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -36,7 +36,16 @@ export function ContactContent({ dictionary }: { dictionary: ReturnType<typeof g
           <address className="text-xl text-gray-600 dark:text-gray-400 max-w-md mx-auto not-italic leading-relaxed p-6 bg-orange-50 dark:bg-gray-900 rounded-3xl border border-orange-100 dark:border-gray-800">
             <strong>{trust}</strong><br/>
             {address} <br/>
-            <span className="mt-4 block font-semibold text-orange-800 dark:text-orange-400">Phone: {phone}</span>
+            <span className="mt-4 block font-semibold text-orange-800 dark:text-orange-400">
+              Phone:{' '}
+              <a href="https://wa.me/919677066635" target="_blank" rel="noopener noreferrer" className="hover:underline">
+                +91 9677066635
+              </a>
+              {', '}
+              <a href="https://wa.me/919092712352" target="_blank" rel="noopener noreferrer" className="hover:underline">
+                +91 9092712352
+              </a>
+            </span>
           </address>
         </motion.div>
         
